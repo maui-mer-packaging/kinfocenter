@@ -46,12 +46,10 @@ BuildRequires:  kf5-solid-devel
 BuildRequires:  kf5-kwidgetsaddons-devel
 BuildRequires:  kf5-kwindowsystem-devel
 BuildRequires:  kf5-kxmlgui-devel
-BuildRequires:  mesa-libGL-devel
-BuildRequires:  mesa-libGLES-devel
-BuildRequires:  mesa-libEGL-devel
+BuildRequires:  libGL-devel
+BuildRequires:  libEGL-devel
 BuildRequires:  libX11-devel
 BuildRequires:  pciutils-devel
-BuildRequires:  libraw1394-devel
 BuildRequires:  desktop-file-utils
 
 

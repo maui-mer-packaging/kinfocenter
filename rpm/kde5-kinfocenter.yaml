@@ -41,12 +41,11 @@ PkgBR:
     - kf5-kwidgetsaddons-devel
     - kf5-kwindowsystem-devel
     - kf5-kxmlgui-devel
-    - mesa-libGL-devel
-    - mesa-libGLES-devel
-    - mesa-libEGL-devel
+    - libGL-devel
+    - libEGL-devel
     - libX11-devel
     - pciutils-devel
-    - libraw1394-devel
+#    - libraw1394-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
