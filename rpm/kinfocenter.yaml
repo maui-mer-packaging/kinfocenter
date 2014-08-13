@@ -1,4 +1,4 @@
-Name         : kde5-kinfocenter
+Name         : kinfocenter
 Version      : 5.0.0
 Release      : 1
 Group        : System/Base
@@ -22,25 +22,25 @@ Configure    : none
 Builder      : none
 
 PkgBR:
-    - kde5-rpm-macros
+    - kf5-rpm-macros
     - extra-cmake-modules
     - qt5-tools
-    - kf5-kcompletion-devel
-    - kf5-kconfig-devel
-    - kf5-kconfigwidgets-devel
-    - kf5-kcoreaddons-devel
-    - kf5-kdoctools-devel
-    - kf5-ki18n-devel
-    - kf5-kiconthemes-devel
-    - kf5-kcmutils-devel
-    - kf5-kdelibs4support-devel
-    - kf5-kio-devel
-    - kf5-plasma-devel
-    - kf5-kservice-devel
-    - kf5-solid-devel
-    - kf5-kwidgetsaddons-devel
-    - kf5-kwindowsystem-devel
-    - kf5-kxmlgui-devel
+    - kcompletion-devel
+    - kconfig-devel
+    - kconfigwidgets-devel
+    - kcoreaddons-devel
+    - kdoctools-devel
+    - ki18n-devel
+    - kiconthemes-devel
+    - kcmutils-devel
+    - kdelibs4support-devel
+    - kio-devel
+    - plasma-devel
+    - kservice-devel
+    - solid-devel
+    - kwidgetsaddons-devel
+    - kwindowsystem-devel
+    - kxmlgui-devel
     - libGL-devel
     - libEGL-devel
     - libX11-devel
@@ -57,7 +57,7 @@ PkgConfigBR:
     - Qt5Test
     - Qt5PrintSupport
 Requires:
-    - kde5-filesystem
+    - kf5-filesystem
 
 RequiresPost:
     - /sbin/ldconfig
@@ -66,12 +66,12 @@ RequiresPostUn:
 
 Files:
     - "%doc COPYING COPYING.DOC"
-    - "%{_kde5_bindir}/kinfocenter"
-    - "%{_kde5_plugindir}/*.so"
-    - "%{_kde5_datadir}/*"
-    - "%{_kde5_sysconfdir}/xdg/menus/kde-information.menu"
+    - "%{_kf5_bindir}/kinfocenter"
+    - "%{_kf5_plugindir}/*"
+    - "%{_kf5_sharedir}/*"
+    - "%{_kf5_configdir}/menus/kde-information.menu"
     - "%{_datadir}/applications/kinfocenter.desktop"
-    - "%{_datadir}/doc/HTML/en/kinfocenter"
-    - "%{_datadir}/kservices5/*.desktop"
-    - "%{_datadir}/kservicetypes5/*.desktop"
+    - "%{_kf5_htmldir}/en/kinfocenter"
+    - "%{_kf5_servicesdir}/*"
+    - "%{_kf5_servicetypesdir}/*"
     - "%{_datadir}/desktop-directories/kde-information.directory"
