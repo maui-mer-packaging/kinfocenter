@@ -35,6 +35,8 @@ BuildRequires:  pkgconfig(Qt5Widgets)
 BuildRequires:  pkgconfig(Qt5Concurrent)
 BuildRequires:  pkgconfig(Qt5Test)
 BuildRequires:  pkgconfig(Qt5PrintSupport)
+BuildRequires:  pkgconfig(libpci)
+BuildRequires:  pkgconfig(x11-xcb)
 BuildRequires:  kf5-rpm-macros
 BuildRequires:  extra-cmake-modules
 BuildRequires:  qt5-tools
@@ -56,8 +58,6 @@ BuildRequires:  kwindowsystem-devel
 BuildRequires:  kxmlgui-devel
 BuildRequires:  libGL-devel
 BuildRequires:  libEGL-devel
-BuildRequires:  libX11-devel
-BuildRequires:  pciutils-devel
 
 %description
 KDE Info Center

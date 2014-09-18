@@ -43,8 +43,6 @@ PkgBR:
     - kxmlgui-devel
     - libGL-devel
     - libEGL-devel
-    - libX11-devel
-    - pciutils-devel
 #    - libraw1394-devel
 PkgConfigBR:
     - Qt5Core
@@ -56,6 +54,8 @@ PkgConfigBR:
     - Qt5Concurrent
     - Qt5Test
     - Qt5PrintSupport
+    - libpci
+    - x11-xcb
 Requires:
     - kf5-filesystem
 
