@@ -8,6 +8,12 @@ Name:       kinfocenter
 # >> macros
 # << macros
 
+# >> bcond_with
+# << bcond_with
+
+# >> bcond_without
+# << bcond_without
+
 Summary:    KDE Info Center
 Version:    5.0.0
 Release:    1
@@ -52,7 +58,6 @@ BuildRequires:  libGL-devel
 BuildRequires:  libEGL-devel
 BuildRequires:  libX11-devel
 BuildRequires:  pciutils-devel
-BuildRequires:  desktop-file-utils
 
 %description
 KDE Info Center
@@ -83,21 +88,17 @@ rm -rf %{buildroot}
 # >> install post
 # << install post
 
-desktop-file-install --delete-original       \
-  --dir %{buildroot}%{_datadir}/applications             \
-   %{buildroot}%{_datadir}/applications/*.desktop
-
 %files
 %defattr(-,root,root,-)
 %doc COPYING COPYING.DOC
 %{_kf5_bindir}/kinfocenter
 %{_kf5_plugindir}/*
 %{_kf5_sharedir}/*
-%{_kf5_configdir}/menus/kde-information.menu
-%{_datadir}/applications/kinfocenter.desktop
+%{_kf5_configdir}/menus/kinfocenter.menu
+%{_kf5_sharedir}/desktop-directories/kinfocenter.directory
+%{_kf5_sharedir}/applications/kinfocenter.desktop
 %{_kf5_htmldir}/en/kinfocenter
 %{_kf5_servicesdir}/*
 %{_kf5_servicetypesdir}/*
-%{_datadir}/desktop-directories/kde-information.directory
 # >> files
 # << files
