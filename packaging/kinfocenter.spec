@@ -8,12 +8,6 @@ Name:       kinfocenter
 # >> macros
 # << macros
 
-# >> bcond_with
-# << bcond_with
-
-# >> bcond_without
-# << bcond_without
-
 Summary:    KDE Info Center
 Version:    5.0.0
 Release:    1
@@ -64,7 +58,7 @@ KDE Info Center
 
 
 %prep
-%setup -q -n %{name}-%{version}/upstream
+%setup -q -n %{name}-%{version}
 
 # >> setup
 # << setup
