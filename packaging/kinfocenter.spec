@@ -90,7 +90,7 @@ rm -rf %{buildroot}
 %{_kf5_sharedir}/*
 %{_kf5_configdir}/menus/kinfocenter.menu
 %{_kf5_sharedir}/desktop-directories/kinfocenter.directory
-%{_kf5_sharedir}/applications/kinfocenter.desktop
+%{_kf5_sharedir}/applications/*.desktop
 %{_kf5_htmldir}/en/kinfocenter
 %{_kf5_servicesdir}/*
 %{_kf5_servicetypesdir}/*
